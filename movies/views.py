@@ -4,7 +4,7 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return render(request, 'movies/index.html')
+    return render(request, 'movies/index.html', {'movie': 'The Matrix'})
 
 
 def about(request):
