@@ -1,5 +1,8 @@
+{% extends 'movies/_base.html' %}
+
 <html>
     <body>
+        {% block content %}
         <h1>Movie List</h1>
         {% if movies %}
             <ul>
@@ -10,5 +13,6 @@
         {% else %}
             <p>No movies are available.</p>
         {% endif %}
+        {% endblock %}
     </body>
 </html>
