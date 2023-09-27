@@ -2,5 +2,7 @@
 <html>
     {% block content %}
     <h1>I like action movies</h1>
+    {% load static %}
+    <img styles="width:100px" src="{% static 'movies/me.jpg' %}" alt="me">
     {% endblock %}
 </html>
