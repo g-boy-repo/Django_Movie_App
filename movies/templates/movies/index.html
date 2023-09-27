@@ -1,6 +1,14 @@
 <html>
     <body>
         <h1>Movie List</h1>
-        {{ movie }}
+        {% if movies %}
+            <ul>
+                {% for movie in movies %}
+                    <li>{{ movie|title }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No movies are available.</p>
+        {% endif %}
     </body>
 </html>
